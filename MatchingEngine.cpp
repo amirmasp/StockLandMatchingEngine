@@ -10,12 +10,6 @@ Order::Order(std::string& symbol, char& side, float& price) {
 // ***********************************************************************
 
 // ***********************************************************************
-Order::~Order() {  
-    //std::cout <<"Order object deleted\n";
-}
-// ***********************************************************************
-
-// ***********************************************************************
 void MatchingEngine::eraseFilledOrders(int f1, int f2, std::string sym) {
     auto gotF1 = this->data_.find(f1); 
     auto gotF2 = this->data_.find(f2);

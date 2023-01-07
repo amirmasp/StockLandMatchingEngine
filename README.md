@@ -16,10 +16,11 @@ Given a set of messages from multiple firms in sequential order, SLME keeps trac
 ## Fields:
 * OrderType: Char in {N, M, C}
 
-...Represents whether a line is for a New Order, Modify Order, Cancel Order
+   Represents whether a line is for a New Order, Modify Order, Cancel Order
+
 * FirmId: Int (4 digit number)
 
-...Represents aunique id for each participating firm
+   Represents aunique id for each participating firm
 
 
 

@@ -89,6 +89,16 @@ For each firm that sent at least one New Order, SLME prints a list in increasing
 `6445 0 0 0`  
 `6466 0 1 1500.49`
 
+### Reasoning
+
+Firm 5172 places two orders, one buy and one sell for APPL and CME respectively.
+Firm 6445 places a sell order for APPL, which does not execute since its sell price is higher than the existing buy order for APPL.
+Firm 5172 places a buy order for VIRT.
+Firm 6466 places a sell order for APPL with a price less than the existing APPL buy order. The 6466 APPL sell order is matched with the 5172 APPL buy order, and both orders are removed (no longer live).
+Firm 6445 modifies their existing APPL order -- nothing happens as there is no buy order for the symbol.
+Firm 6445 cancels their existing APPL order.
+
+
    
 
 

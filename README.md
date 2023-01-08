@@ -10,7 +10,7 @@ Assume Also other market makers (firms) send their orders to StockLand  Exchange
 
 Here in our simulation app we shows how a matching engine at an exchange(StockLand) works.
 
-## Instruction
+## Instruction:
 Given a set of messages from multiple firms in sequential order, SLME keeps track of orders and matches them properly. After proceessing all messages, outputs the number of live orders(new orders that were not cancelled or filled), the number of fills, and total balance of each firm that sent at least one new order.
 
 ## Fields:
@@ -30,6 +30,13 @@ Given a set of messages from multiple firms in sequential order, SLME keeps trac
    Represents whether an order is on the Buy or Sell side.
 
 * Price: Float32   
+
+## Type of Messages:
+* New Order
+
+   Format: N <FirmId> <Symbol> <Side> <Price>
+
+   What it does: Places an order for symbol, side, and price for firm <FirmId>
 
 
 

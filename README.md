@@ -76,6 +76,22 @@ Followed by N messages
 For each firm that sent at least one New Order, SLME prints a list in increasing order according to FirmId:
 
 &lt;FirmId&gt; &lt;Number of live Orders&gt; &lt;Number of Fills&gt; &lt;Amount paid out to Firm&gt;
+
+### Example Input:
+`7`  
+`N 5172 APPL B 1500.50`  
+`N 5172 CME S 500.5`  
+`N 6445 APPL S 1500.51`  
+`N 5172 VIRT B 100.35`  
+`N 6466 APPL S 1500.49`  
+`M 6445 APPL  1500.48`  
+`C 6445 APPL`  
+
+
+
+
+### Corresponding Output:
+
    
 
 

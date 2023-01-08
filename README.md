@@ -40,7 +40,12 @@ Given a set of messages from multiple firms in sequential order, SLME keeps trac
 
    Each order is for quantity 1
 
-   Only one new order per symbol for each firm
+   Only one new order per symbol for each firm(a firm can not have a buy and a sell order for the one symbol)
+
+   New Orders sent for a symbol where a firm already has an existing order will be ignored
+
+* Modify
+   
 
 
 

@@ -60,17 +60,14 @@ Given a set of messages from multiple firms in sequential order, SLME keeps trac
 
 ## Matching Rules   
 
-1. Only orders from different firms can be matched against each other except StockLand itself
-
-2. The highest Buy order will be matched against the lowest Sell order if the buy price is >= the sell price
-
+1. Only orders from different firms can be matched against each other except StockLand itself  
+2. The highest Buy order will be matched against the lowest Sell order if the buy price is >= the sell price  
 3. The firm on the buy side is charged the price listed on the sell order being matched and firm on the sell side is paid the amount listed on the sell order
 
 ## Input format:
 
 N (where 1 <= N <= 10000)
 Followed by N messages
-
 
 ## Output format:
 For each firm that sent at least one New Order, SLME prints a list in increasing order according to FirmId:
@@ -87,10 +84,10 @@ For each firm that sent at least one New Order, SLME prints a list in increasing
 `M 6445 APPL  1500.48`  
 `C 6445 APPL`  
 
-
-
-
 ### Corresponding Output:
+`5172 2 1 -1500.50`  
+`6445 0 0 0`  
+`6466 0 1 1500.49`
 
    
 

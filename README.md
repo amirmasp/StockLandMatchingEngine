@@ -53,11 +53,22 @@ Given a set of messages from multiple firms in sequential order, SLME keeps trac
    TODO: Newly modified orders take lower precedence (a modified order will be matched after all other all preexisting orders with the same price and side)
 
 * Cancel
+
    Format: C &lt;FirmId&gt; &lt;Symbol&gt; 
 
-   What it does:Cancels an existing order place by &lt;FirmId&gt; on symbol &lt;Symbol&gt;
+   What it does: Cancels an existing order place by &lt;FirmId&gt; on symbol &lt;Symbol&gt;
 
 ## Matching Rules   
+
+1. Only orders from different firms can be matched against each other except StockLand itself
+
+2. The highest Buy order will be matched against the lowest Sell order if the buy price is >= the sell price
+
+3. The firm on the buy side is charged the price listed on the sell order being matched and firm on the sell side is paid the amount listed on the sell order
+
+## Input format:
+
+N 
    
 
 

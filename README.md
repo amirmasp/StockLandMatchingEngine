@@ -34,9 +34,13 @@ Given a set of messages from multiple firms in sequential order, SLME keeps trac
 ## Type of Messages:
 * New Order
 
-   Format: N <FirmId> <Symbol> <Side> <Price>
+   Format: N &lt;FirmId&lt; (Symbol) (Side) (Price)
 
-   What it does: Places an order for symbol, side, and price for firm <FirmId>
+   What it does: Places an order for symbol, side, and price for firm (FirmId)
+
+   Each order is for quantity 1
+
+   Only one new order per symbol for each firm
 
 
 

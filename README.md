@@ -68,7 +68,14 @@ Given a set of messages from multiple firms in sequential order, SLME keeps trac
 
 ## Input format:
 
-N 
+N (where 1 <= N <= 10000)
+Followed by N messages
+
+
+## Output format:
+For each firm that sent at least one New Order, SLME prints a list in increasing order according to FirmId:
+
+&lt;FirmId&gt; &lt;Number of live Orders&gt; &lt;Number of Fills&gt; &lt;Amount paid out to Firm&gt;
    
 
 

@@ -45,6 +45,19 @@ Given a set of messages from multiple firms in sequential order, SLME keeps trac
    New Orders sent for a symbol where a firm already has an existing order will be ignored
 
 * Modify
+
+   Format: M &lt;FirmId&gt; &lt;Symbol&gt; &lt;Price&gt;
+   
+   What it does: Changes the price of an existing order placed by firm &lt;FirmId&gt; on symbol &lt;Symbol&gt;
+
+   TODO: Newly modified orders take lower precedence (a modified order will be matched after all other all preexisting orders with the same price and side)
+
+* Cancel
+   Format: C &lt;FirmId&gt; &lt;Symbol&gt; 
+
+   What it does:Cancels an existing order place by &lt;FirmId&gt; on symbol &lt;Symbol&gt;
+
+## Matching Rules   
    
 
 
